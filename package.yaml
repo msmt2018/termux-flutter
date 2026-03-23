@@ -3,8 +3,8 @@
 # arcĥ: build arch
 # version: engine version
 define:
-  prefix: '"data/data/com.termux/files/usr"'
-  distro: '"data/data/com.termux/files/usr/opt/flutter"'
+  prefix: '"data/data/com.itsaky.androidide/files/usr"'
+  distro: '"data/data/com.itsaky.androidide/files/usr/opt/flutter"'
   remote: f'https://storage.googleapis.com/flutter_infra_release/flutter/{version}'
 
 control:
