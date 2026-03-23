@@ -8,7 +8,7 @@ from functools import wraps
 __ARCH__ = dict(arm='arm', arm64='aarch64', x64='x86_64', x86='i686')
 __MODE__ = ('release', 'debug', 'profile')
 
-if os.environ.get('PREFIX') == '/data/data/com.termux/files/usr':
+if os.environ.get('PREFIX') == '/data/data/com.itsaky.androidide/files/usr':
     __TERMUX__ = 'true'
 else:
     __TERMUX__ = 'false'
