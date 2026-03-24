@@ -7,7 +7,7 @@ index fe4437e2..dc658b7b 100644
    // once.
    ProcessResult result = Process.runSync(
 -      "/bin/sh", ["-c", "printf '%s' '$TERMINAL_CAPABILITIES' | tput -S"]);
-+      "/data/data/com.termux/files/usr/bin/sh", ["-c", "printf '%s' '$TERMINAL_CAPABILITIES' | tput -S"]);
++      "/data/data/com.itsaky.androidide/files/usr/bin/sh", ["-c", "printf '%s' '$TERMINAL_CAPABILITIES' | tput -S"]);
  
    if (result.exitCode != 0) {
      printEnableColorsReason("Not enabling colors, running tput failed.");
@@ -57,7 +57,7 @@ index b60658c4..aa0dcb8d 100644
      }
      intptr_t pid = getpid();
 -    char* filename = OS::SCreate(nullptr, "/tmp/perf-%" Pd ".map", pid);
-+    char* filename = OS::SCreate(nullptr, "/data/data/com.termux/files/usr/tmp/perf-%" Pd ".map", pid);
++    char* filename = OS::SCreate(nullptr, "/data/data/com.itsaky.androidide/files/usr/tmp/perf-%" Pd ".map", pid);
      out_file_ = (*file_open)(filename, true);
      free(filename);
    }
