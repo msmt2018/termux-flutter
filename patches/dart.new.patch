@@ -20,7 +20,7 @@ index ddfed623..c8e1ac0e 100644
    if (temp_dir == nullptr) {
  #if defined(DART_HOST_OS_ANDROID)
 -    temp_dir = "/data/local/tmp";
-+    temp_dir = "/data/data/com.termux/files/usr/tmp";
++    temp_dir = "/data/data/com.itsaky.androidide/files/usr/tmp";
  #else
      temp_dir = "/tmp";
  #endif
@@ -70,7 +70,7 @@ index a43770f6..208b4894 100644
        return 'cmd.exe';
      }
 -    return '/bin/sh';
-+    return '/data/data/com.termux/files/usr/bin/sh';
++    return '/data/data/com.itsaky.androidide/files/usr/bin/sh';
    }
  
    static List<String> _getShellArguments(
